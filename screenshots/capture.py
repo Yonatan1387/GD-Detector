@@ -10,12 +10,12 @@ path = os.path.join("data", "screenshots")
 if not os.path.exists(path):
     os.makedirs(path)
 
-monitor = {"top": 180, "left": 315, "width": 1295, "height": 705}
+monitor = {"top": 85, "left": 1020, "width": 850, "height": 490}
 
 
 with mss.mss() as sct:
     while True:
-        time.sleep(10)
+        time.sleep(5)
         img = numpy.array(sct.grab(monitor))
         cv2.imshow("", img)
         if keyboard.is_pressed('p'):
