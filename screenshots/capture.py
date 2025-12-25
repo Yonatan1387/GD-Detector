@@ -15,7 +15,7 @@ monitor = {"top": 85, "left": 1020, "width": 850, "height": 490}
 
 with mss.mss() as sct:
     while True:
-        time.sleep(5)
+        #time.sleep(5)
         img = numpy.array(sct.grab(monitor))
         cv2.imshow("", img)
         if keyboard.is_pressed('p'):

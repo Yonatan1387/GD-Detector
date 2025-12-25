@@ -1,13 +1,13 @@
-train: C:/Users/yonat/GD-Detection/data/dataset/train/images
-val: C:/Users/yonat/GD-Detection/data/dataset/train/images
-test: test/images
+train: train/images
+val: train/images
+test: ../test/images
 
-nc: 2
-names: ['player', 'spike']
+nc: 3
+names: ['block', 'player', 'spike']
 
 roboflow:
   workspace: workspace-wbs7h
   project: gd-detection-nhary
-  version: 1
+  version: 4
   license: CC BY 4.0
-  url: https://universe.roboflow.com/workspace-wbs7h/gd-detection-nhary/dataset/1
+  url: https://universe.roboflow.com/workspace-wbs7h/gd-detection-nhary/dataset/4
